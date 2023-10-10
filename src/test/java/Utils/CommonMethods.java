@@ -27,6 +27,7 @@ public class CommonMethods extends PageInitializer {
         switch (browser) {
             case ("Chrome"):
                 ChromeOptions co = new ChromeOptions();
+                co.setHeadless(true);
                 driver = new ChromeDriver(co);
                 break;
 
